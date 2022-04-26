@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Bold.ttf") format("truetype"),
+    url("../fonts/Lato-Medium.ttf") format("truetype"),
+    url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-style: bold, medium, normal;
+    font-weight: 700, 500, 400;
+}
+
+* {
+    font-family: 'Lora', serif, 'Playfair Display', serif, 'Lato';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
