@@ -1,0 +1,67 @@
+.header {
+    padding-top: 35px;
+    .container__flex {
+        display: flex;
+    }
+    &__logo {
+        width: 241px;
+        height: 58px;
+    }
+    &__divider {
+        height: 80px;
+        width: 0;
+        border: 1px solid rgba(51, 26, 47, 0.5);
+        margin-left: 19px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(51, 26, 47, 0.9);
+    }
+    &__menu {
+        &-item {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+            color: #331A2F;
+        }
+        &-polygon {
+            width: 13px;
+            height: 12px;
+        }
+    }
+    &__phone {
+        &-img {
+            width: 24px;
+            height: 24px;
+        }
+        &-contacts {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+            a {
+                text-decoration: none;
+                color: #331A2F;
+            }
+        }
+    }
+    &__button {
+        &-singin {
+            width: 23px;
+            height: 23px;
+        }
+        button {
+            width: 169px;
+            height: 45px;
+            background: #CF51CE;
+            border-radius: 12px;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 35px;
+            letter-spacing: 0.02em;
+            border: none;
+        }
+    }
+}

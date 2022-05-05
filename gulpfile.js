@@ -7,6 +7,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import rename from "gulp-rename";
 import imagemin from 'gulp-imagemin';
 import htmlmin from 'gulp-htmlmin';
+import svgSprite from 'gulp-svg-sprite';
 
 const sass = gulpSass(dartSass);
 
@@ -79,4 +80,20 @@ gulp.task('fonts', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('svgSprite', function () {
+    return gulp.src('src/icons/*.svg') 
+        .pipe(svgSprite({
+                mode: {
+                    stack: {
+                        sprite: "../sprite.svg"  
+                    }
+                },
+            }
+        ))
+        .pipe(gulp.dest('src/icons/sprite'))
+        .pipe(gulp.dest('dist/icons/sprite'))
+        .pipe(gulp.dest('docs/icons/sprite'));
+});
+
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'icons', 'images', 'fonts'));
+

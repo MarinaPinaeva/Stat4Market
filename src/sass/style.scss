@@ -1,21 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 @font-face {
     font-family: 'Lato';
-    src: url("../fonts/Lato-Bold.ttf") format("truetype"),
-    url("../fonts/Lato-Medium.ttf") format("truetype"),
-    url("../fonts/Lato-Regular.ttf") format("truetype");
-    font-style: bold, medium, normal;
-    font-weight: 700, 500, 400;
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-SemiBold.ttf") format("truetype");
+    font-style: semibold;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Medium.ttf") format("truetype");
+    font-style: medium;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-style: regular;
+    font-weight: 400;
+}
+
+
 * {
-    font-family: 'Lora', serif, 'Playfair Display', serif, 'Lato';
+    font-family: 'Lato';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FAFAFA;
+}
 .container {
     width: 1110px;
     margin: 0 auto;
 }
+
+
+
+@import 'blocks/header';
