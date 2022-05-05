@@ -1,1 +1,1 @@
-https://marinapinaeva.github.io/frispes/
+https://marinapinaeva.github.io/Stat4Market/
