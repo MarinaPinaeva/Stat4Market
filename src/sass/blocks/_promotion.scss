@@ -1,0 +1,53 @@
+.promotion {
+    padding-top: 100px;
+    .colortext {
+        color: #CF51CE;
+        &__tag {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 55px;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 710px 435px;
+        column-gap: 54px;
+        grid-auto-columns: auto ;
+    }
+    &__info {
+        display: grid;
+        grid-template-rows: 130px 55px 286px;
+        grid-auto-rows: auto;
+        row-gap: 40px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 65px;
+        color: #331A2F;
+    }
+    &__price {
+        display: flex;
+        &-img {
+            width: 48px;
+            height: 48px;
+        }
+        &-tag {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: rgba(51, 26, 47, 0.8);
+            margin: 0px 25px;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: rgba(51, 26, 47, 0.8);
+        &-item {
+            margin-bottom: 15px;
+        }
+    }
+}

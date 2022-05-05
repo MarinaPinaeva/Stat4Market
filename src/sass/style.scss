@@ -38,10 +38,12 @@ body {
     background-color: #FAFAFA;
 }
 .container {
-    width: 1110px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 
 
 @import 'blocks/header';
+@import 'blocks/circle';
+@import 'blocks/promotion';

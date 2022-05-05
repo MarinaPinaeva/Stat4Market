@@ -1,45 +1,59 @@
 .header {
-    padding-top: 35px;
+    padding-top: 30px;
     .container__flex {
         display: flex;
     }
     &__logo {
-        width: 241px;
-        height: 58px;
+        width: 187px;
+        height: 44px;
+        margin-top: 11px;
+        img {
+            width: 100%;
+        }
     }
     &__divider {
-        height: 80px;
+        height: 62px;
         width: 0;
         border: 1px solid rgba(51, 26, 47, 0.5);
-        margin-left: 19px;
+        margin-left: 15px;
     }
     &__text {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 13px;
+        font-size: 10px;
+        line-height: 14px;
+        margin: 10px 0 0 20px;
         color: rgba(51, 26, 47, 0.9);
     }
     &__menu {
+        display: flex;
+        margin: 12px 0 0 28px;
         &-item {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 35px;
             color: #331A2F;
         }
         &-polygon {
             width: 13px;
-            height: 12px;
+            height: 11px;
+            margin: 12px 40px 0 12px;
         }
     }
     &__phone {
+        display: flex;
+        margin-left: 135px;
         &-img {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 19px;
+            margin-top: 17px;
+            margin-right: 2px;
         }
         &-contacts {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 35px;
+            margin-top: 12px;
             a {
                 text-decoration: none;
                 color: #331A2F;
@@ -47,21 +61,28 @@
         }
     }
     &__button {
+        display: flex;
+        margin: 9px 0 0 92px;
+        position: relative;
         &-singin {
-            width: 23px;
-            height: 23px;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            transform: translate(32px, 9px);
         }
         button {
-            width: 169px;
-            height: 45px;
+            width: 152px;
+            height: 43px;
             background: #CF51CE;
             border-radius: 12px;
             color: #FFFFFF;
             font-weight: 500;
-            font-size: 23px;
+            font-size: 18px;
             line-height: 35px;
             letter-spacing: 0.02em;
             border: none;
+            padding-left: 30px;
+            cursor: pointer;
         }
     }
 }
