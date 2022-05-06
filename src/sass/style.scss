@@ -40,6 +40,12 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    &__flex {
+        display: flex;
+    }
+    &__small {
+        width: 995px;
+    }
 }
 
 
@@ -47,3 +53,4 @@ body {
 @import 'blocks/header';
 @import 'blocks/circle';
 @import 'blocks/promotion';
+@import 'blocks/history';

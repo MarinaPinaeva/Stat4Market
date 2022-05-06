@@ -1,14 +1,13 @@
 .header {
     padding-top: 30px;
-    .container__flex {
-        display: flex;
-    }
     &__logo {
         width: 187px;
         height: 44px;
         margin-top: 11px;
         img {
+            object-fit: cover;
             width: 100%;
+            height: 100%;
         }
     }
     &__divider {
@@ -37,7 +36,12 @@
         &-polygon {
             width: 13px;
             height: 11px;
-            margin: 12px 40px 0 12px;
+            margin: 9px 40px 0 12px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
     &__phone {
@@ -46,8 +50,13 @@
         &-img {
             width: 20px;
             height: 19px;
-            margin-top: 17px;
-            margin-right: 2px;
+            margin-top: 19px;
+            margin-right: 3px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
         &-contacts {
             font-weight: 400;
@@ -68,7 +77,12 @@
             position: absolute;
             width: 20px;
             height: 20px;
-            transform: translate(32px, 9px);
+            transform: translate(32px, 11px);
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
         button {
             width: 152px;

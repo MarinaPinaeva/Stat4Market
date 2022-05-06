@@ -31,6 +31,12 @@
         &-img {
             width: 48px;
             height: 48px;
+            margin-top: 2px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
         &-tag {
             font-weight: 600;
@@ -39,6 +45,11 @@
             text-transform: uppercase;
             color: rgba(51, 26, 47, 0.8);
             margin: 0px 25px;
+            .bigtext {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 29px;
+            }
         }
     }
     &__text {
@@ -48,6 +59,15 @@
         color: rgba(51, 26, 47, 0.8);
         &-item {
             margin-bottom: 15px;
+        }
+    }
+    &__picture {
+        width: 435px;
+        height: 435px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
     }
 }
