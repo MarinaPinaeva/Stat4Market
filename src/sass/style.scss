@@ -42,6 +42,7 @@ body {
     margin: 0 auto;
     &__flex {
         display: flex;
+        justify-content: space-between;
     }
     &__small {
         width: 995px;
@@ -59,6 +60,7 @@ img {
 
 
 @import 'blocks/header';
+@import 'blocks/breadcrumb';
 @import 'blocks/circle';
 @import 'blocks/promotion';
 @import 'blocks/history';
