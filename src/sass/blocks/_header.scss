@@ -38,6 +38,29 @@
             margin: 9px 40px 0 12px;
             cursor: pointer;
         }
+        &_phone {
+            display: none;
+            &-img {
+                width: 20px;
+                height: 19px;
+                margin-top: 19px;
+                margin-right: 3px;
+            }
+            &-contacts {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 35px;
+                margin-top: 12px;
+                a {
+                    text-decoration: none;
+                    color: #331A2F;
+                    &:hover {
+                        color: #fafafa;
+                        transition: all .5s ease;
+                    }
+                }
+            }
+        }
     }
     &__phone {
         display: flex;
@@ -93,3 +116,7 @@
         }
     }
 }
+
+// .hamburger {
+//     display: none;
+// }
