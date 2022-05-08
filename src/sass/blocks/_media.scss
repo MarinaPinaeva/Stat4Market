@@ -11,6 +11,8 @@
         }
         &__right {
             display: block;
+            // right: -8vw;
+            // top: 9vh;
             transform: translate(1195px, 520px);
         }
     }
@@ -297,6 +299,9 @@
         &__flex {
             justify-content: unset;
         }
+        &__education {
+            width: 675px;
+        }
     }
     .header {
         &__logo {
@@ -391,6 +396,18 @@
             }
         }
     }
+    .education {
+        padding-top: 120px;
+        &__divider {
+            transform: translate(403px,-5px);
+        }
+        &__wrapper {
+            margin-top: 70px;
+        }
+        &__item {
+            margin-top: 15px;
+        }
+    }
 }
 
 @media (max-width: 767px){
@@ -468,6 +485,28 @@
             &_shop {
                 margin: unset;
                 margin-left: 40px;
+            }
+        }
+    }
+    .education {
+        &__title {
+            font-size: 34px;
+            line-height: 50px;
+        }
+        &__divider {
+            transform: translate(332px,-5px);
+            width: 190px;
+            height: 5px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 31px;
+            margin: 20px 90px 0 90px;
+        }
+        &__item {
+            text-align: center;
+            &-img {
+                transform: translate(60%,0);
             }
         }
     }
@@ -595,6 +634,36 @@
             &_experience {
                 grid-row: 2/3;
                 margin-right: unset;
+            }
+        }
+    }
+    .education {
+        padding-top: 100px;
+        margin-bottom: 70px;
+        &__title {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__divider {
+            transform: translate(100px,-4px);
+            width: 131px;
+            height: 4px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 29px;
+            margin: unset;
+            margin-top: 20px;
+        }
+        &__wrapper {
+            margin-top: 50px;
+            justify-content: center;
+        }
+        &__item {
+            margin-top: unset;
+            &-title {
+                font-size: 18px;
+                line-height: 27px;
             }
         }
     }
