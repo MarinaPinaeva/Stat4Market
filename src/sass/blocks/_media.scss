@@ -1,4 +1,60 @@
-
+@media (min-width: 1441px) {
+    .container {
+        min-width: 1350px;
+        &__flex {
+            justify-content: unset;
+        }
+    }
+    .header {
+        padding-top: 35px;
+        &__logo {
+            width: 241px;
+            height: 58px;
+        }
+        &__divider {
+            height: 80px;
+            margin-left: 19px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 18px;
+            margin: 13px 0 0 25px;
+        }
+        &__menu {
+            margin: 22px 0 0 31px;
+            &-item {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        &__phone {
+            margin: 10px 0 0 83px;
+            &-img {
+                width: 24px;
+                height: 24px;
+                margin-top: 17px;
+                margin-right: 5px;
+            }
+            &-contacts {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        &__button {
+            margin: 18px 0 0 75px;
+            &-singin {
+                width: 23px;
+                height: 23px;
+            }
+            button {
+                width: 169px;
+                height: 45px;
+                font-size: 23px;
+                line-height: 35px;
+            }
+        }
+    }
+}
 @media (max-width: 1200px){
     .container {
         max-width: 960px;
@@ -27,6 +83,7 @@
             background-color: rgba(207,81,206,.7);
             transition: 0.6s all;
             margin: unset;
+            z-index: 2;
             &-item {
                 &:hover {
                     color: #FAFAFA;
@@ -39,9 +96,6 @@
             &-polygon {
                 display: none;
             }
-            // &__phone {
-            //     display: none;
-            // }
         }
         &__phone {
             margin-left: 50px;
@@ -88,6 +142,55 @@
             }
         }
     }
+    .bread {
+        &__breadcrumb {
+            margin-left: 20px;
+        }
+    }
+
+    .promotion {
+        &__wrapper {
+            grid-template-columns: 545px 395px;
+            margin: 0 10px;
+            column-gap: unset;
+        }
+        &__info {
+            grid-template-rows: 140px 55px 350px;
+            row-gap: 30px;
+        }
+        &__title {
+            font-size: 37px;
+        }
+        &__picture {
+            width: 410px;
+            height: 410px;
+        }
+    }
+
+
+    .history {
+        &__shop {
+            grid-template-columns: 320px 500px;
+            margin: 0 20px;
+            &-img {
+                width: 320px;
+                height: 330px;
+            }
+        }
+        &__experience {
+            grid-template-columns: 500px 320px;
+            margin: 0 20px;
+            &-img {
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+    .education {
+        &__divider {
+            transform: translate(545px,-5px);
+        }
+    }
 }
 
 @media (max-width: 991px){
@@ -110,11 +213,6 @@
             font-size: 10px;
             margin: 10px 0 0 10px;
         }
-        // &__menu {
-        //     &_phone {
-        //         display: none;
-        //     }
-        // }
         &__phone {
             margin-left: 26px;
             &-img {
@@ -130,6 +228,68 @@
             margin: 9px 55px 0 55px;
             button {
                 font-size: 20px;
+            }
+        }
+    }
+    .bread {
+        margin-top: 46px;
+        &__breadcrumb {
+            margin-left: 15px;
+        }
+    }
+    .promotion {
+        overflow: hidden;
+        &__wrapper {
+            margin: 20px 19px 0 0;
+            grid-template-columns: 482px 252px;
+            position: relative;
+        }
+        &__info {
+            grid-template-rows: 55px 446px;
+            row-gap: 17px;
+        }
+        &__title {
+            display: none;
+            &_768 {
+                display: block;
+                font-size: 46px;
+            }
+        }
+        &__picture {
+            position: absolute;
+            left: 527px;
+        }
+    }
+    .history {
+        padding-top: 65px;
+        &__wrapper {
+            padding-top: 80px;
+        }
+        &__shop {
+            grid-template-columns: 270px 428px;
+            margin: 0 15px;
+            &-img {
+                width: 270px;
+                height: 278px;
+            }
+        }
+        &__experience {
+            grid-template-columns: 428px 270px;
+            margin: 0 15px;
+            &-img {
+                width: 270px;
+                height: 270px;
+                margin-top: 17px;
+            }
+        }
+        &__descr {
+            margin: unset;
+            font-size: 18px;
+            &_shop {
+                margin: 11px 0 71px 40px;
+            }
+            &_experience {
+                margin-right: 40px;
             }
         }
     }
@@ -156,6 +316,63 @@
             margin: 9px 64px 0 25px;
         }
     }
+    .bread {
+        &__breadcrumb {
+            margin-left: 10px;
+        }
+    }
+    .promotion {
+        &__title {
+            &_768 {
+                font-size: 36px;
+                line-height: 50px;
+                margin: 0 30px 0 10px;
+            }
+        }
+        &__wrapper {
+            margin: 20px 19px 0 10px;
+            grid-template-columns: 420px;
+        }
+        &__picture {
+            width: 310px;
+            height: 310px;
+            left: 370px;
+            top: -140px;
+        }
+    }
+    .history {
+        &__title {
+            font-size: 34px;
+            line-height: 55px;
+        }
+        &__wrapper {
+            grid-template-rows: 278px 330px;
+            row-gap: 15px;
+        }
+        &__shop {
+            grid-template-columns: 175px 360px;
+            margin: 0 10px;
+            &-img {
+                width: 175px;
+                height: 175px;
+            }
+        }
+        &__experience {
+            grid-template-columns: 360px 175px;
+            margin: 0 10px;
+            &-img {
+                width: 175px;
+                height: 175px;
+            }
+        }
+        &__descr {
+            font-size: 16px;
+            &_shop {
+                margin: unset;
+                margin-left: 40px;
+            }
+        }
+    }
 }
 
 
@@ -178,7 +395,7 @@
             }
             &_phone {
                 &-contacts {
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
         }
@@ -195,6 +412,91 @@
                 border-radius: 6px;
                 font-size: 14px;
                 line-height: 28px;
+            }
+        }
+    }
+    .bread {
+        margin-top: 40px;
+        &__breadcrumb {
+            margin-left: 5px;
+        }
+    }
+    .promotion {
+        padding-top: 45px;
+        &__title {
+            &_768 {
+                font-size: 26px;
+                line-height: 39px;
+                margin: 0px 101px 0 0px;
+            }
+        }
+        &__wrapper {
+            margin: 25px 0 0 0;
+            grid-template-columns: 330px;
+        }
+        &__info {
+            grid-template-rows: 55px 470px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 29px;
+            &_item {
+                margin-bottom: 10px;
+            }
+        }
+        &__picture {
+            width: 245px;
+            height: 245px;
+            left: 210px;
+            top: -227px;
+        }
+    }
+    .history {
+        padding-top: 85px;
+        &__title {
+            font-size: 22px;
+            line-height: 36px;
+        }
+        &__wrapper {
+            padding-top: 50px;
+            grid-template-rows: 570px 630px;
+            grid-template-columns: repeat(2, 330px);
+            row-gap: 40px;
+        }
+        &__shop {
+            grid-template-columns: unset;
+            grid-template-rows: 278px 261px;
+            row-gap: 30px;
+            grid-row: 1/2;
+            &-img {
+                width: 270px;
+                height: 278px;
+                margin: 0 auto;
+            }
+        }
+        &__experience {
+            grid-template-columns: unset;
+            grid-template-rows: 270px 330px;
+            row-gap: 30px;
+            grid-row: 2/3;
+            &-img {
+                grid-column: unset;
+                grid-row: 1/2;
+                width: 270px;
+                height: 270px;
+                margin: 0 auto;
+            }
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 29px;
+            &_shop {
+                margin-left: unset;
+                align-items: center;
+            }
+            &_experience {
+                grid-row: 2/3;
+                margin-right: unset;
             }
         }
     }
