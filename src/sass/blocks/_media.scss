@@ -5,6 +5,15 @@
             justify-content: unset;
         }
     }
+    .circle {
+        &__left {
+            transform: translate(-220px,0px);
+        }
+        &__right {
+            display: block;
+            transform: translate(1195px, 520px);
+        }
+    }
     .header {
         padding-top: 35px;
         &__logo {
@@ -51,6 +60,92 @@
                 height: 45px;
                 font-size: 23px;
                 line-height: 35px;
+            }
+        }
+    }
+    .promotion {
+        &__wrapper {
+            grid-template-columns: 770px 550px;
+            column-gap: 30px;
+        }
+        &__info {
+            grid-template-rows: 160px 55px 425px;
+            row-gap: 20px;
+        }
+        &__title {
+            font-size: 52px;
+            line-height: 80px;
+        }
+        &__text {
+            font-size: 25px;
+            line-height: 40px;
+        }
+        &__picture {
+            width: 550px;
+            height: 550px;
+        }
+    }
+    .history {
+        padding-top: 137px;
+        .container {
+            &__small {
+                min-width: 1150px;
+            }
+        }
+        &__title {
+            font-size: 48px;
+        }
+        &__wrapper {
+            grid-template-rows: repeat(2,475px);
+        }
+        &__shop {
+            grid-template-columns: 400px 670px;
+            &-img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        &__experience {
+            grid-template-columns: 670px 400px;
+            &-img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        &__descr {
+            font-size: 25px;
+            line-height: 40px;
+        }
+    }
+    .education {
+        margin-bottom: 131px;
+        &__title {
+            font-size: 48px;
+        }
+        &__divider {
+            width: 261px;
+            height: 7px;
+            transform: translate(753px,-5px);
+        }
+        &__subtitle {
+            font-size: 25px;
+            line-height: 40px;
+        }
+        &__item {
+            width: 290px;
+            min-height: 368px;
+            &-img {
+                width: 110px;
+                height: 110px;
+            }
+            &-title {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 15px;
+            }
+            &-descr {
+                font-size: 18px;
+                line-height: 29px;
             }
         }
     }
@@ -189,6 +284,9 @@
     .education {
         &__divider {
             transform: translate(545px,-5px);
+        }
+        &__wrapper {
+            flex-wrap: wrap;
         }
     }
 }
